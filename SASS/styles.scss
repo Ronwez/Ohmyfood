@@ -1,0 +1,55 @@
+$grey:#EAEAEA;
+$light-grey-color:#F6F6F6;
+$btn-gradient-color:#FF79DA, #9356DC;
+
+html{
+    font-size: 18px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+    #logo{
+        width: 200px;
+    }
+}
+
+.top_home{
+    display: flex;
+    flex-direction: column;
+    .homehead{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+        #location {
+        background-color: $grey;
+        width: 100%;
+        }
+            .fa-location-dot{
+            padding-right: 10px;
+            }
+        #explorer{
+            background-color: $light-grey-color;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 20px;
+        }
+            .exTitle{
+                font-family: roboto;
+                font-size: 40px;
+                margin:15px 0 5px 0;
+                font-weight: bolder;
+            }
+            .exButton{
+            border-radius: 25px;
+            padding:15px;
+            background: linear-gradient(to bottom, $btn-gradient-color);
+            color:white;
+            border:none;
+            font-weight: bold;
+            }
+}

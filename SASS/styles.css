@@ -1,0 +1,50 @@
+html {
+  font-size: 18px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.navbar #logo {
+  width: 200px;
+}
+
+.top_home {
+  display: flex;
+  flex-direction: column;
+}
+.top_home .homehead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top_home #location {
+  background-color: #EAEAEA;
+  width: 100%;
+}
+.top_home .fa-location-dot {
+  padding-right: 10px;
+}
+.top_home #explorer {
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.top_home .exTitle {
+  font-family: roboto;
+  font-size: 40px;
+  margin: 15px 0 5px 0;
+  font-weight: bolder;
+}
+.top_home .exButton {
+  border-radius: 25px;
+  padding: 15px;
+  background: linear-gradient(to bottom, #FF79DA, #9356DC);
+  color: white;
+  border: none;
+  font-weight: bold;
+}/*# sourceMappingURL=Styles.css.map */
