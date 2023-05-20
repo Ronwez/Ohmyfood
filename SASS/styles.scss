@@ -6,6 +6,7 @@ html{
     font-size: 18px;
 }
 
+
 .navbar{
     display: flex;
     align-items: center;
@@ -20,12 +21,14 @@ html{
 .top_home{
     display: flex;
     flex-direction: column;
+    text-align: center;
     .homehead{
         display: flex;
         justify-content: center;
         align-items:center;
     }
         #location {
+        font-family: roboto;
         background-color: $grey;
         width: 100%;
         }
@@ -36,7 +39,7 @@ html{
             background-color: $light-grey-color;
             display: flex;
             flex-direction: column;
-            padding-bottom: 20px;
+            padding-bottom: 30px;
         }
             .exTitle{
                 font-family: roboto;
