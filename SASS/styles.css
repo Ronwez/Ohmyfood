@@ -39,9 +39,9 @@ html h1 {
 }
 .top_home #explorer {
   background-color: #F6F6F6;
+  padding: 0 25px 30px 25px;
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px;
 }
 .top_home .exButton {
   border-radius: 25px;
@@ -53,33 +53,32 @@ html h1 {
 }
 
 .step_home {
-  margin: 30px 0 20px 0;
+  margin-right: 0px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1044px) {
   .step_home .step_home {
-    margin-right: 0px;
+    margin: 30px 0 20px 0;
   }
   .step_home .All_steps {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .step_home .step {
-    margin-bottom: 1rem;
-    width: 80%;
+    margin-right: 2rem;
   }
 }
 .step_home .All_steps {
-  display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
 }
 .step_home .All_steps .step {
   display: flex;
   align-items: center;
   border-radius: 20px;
-  margin-right: 2rem;
+  margin-bottom: 1rem;
   padding: 0.6em 1em;
-  font-weight: 211;
   background-color: #F6F6F6;
 }
 .step_home .All_steps .step_num {
