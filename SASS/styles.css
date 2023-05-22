@@ -1,12 +1,19 @@
+* {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 html {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
 }
-html .Section_Title {
+
+.Section_Title {
   margin: 15px 0 5px 0;
   font-weight: bolder;
 }
-html h1 {
+
+h1 {
   font-size: 40px;
 }
 
@@ -24,6 +31,7 @@ html h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 30px;
 }
 .top_home .homehead {
   display: flex;
@@ -53,20 +61,7 @@ html h1 {
 }
 
 .step_home {
-  margin-right: 0px;
-}
-@media screen and (min-width: 1044px) {
-  .step_home .step_home {
-    margin: 30px 0 20px 0;
-  }
-  .step_home .All_steps {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .step_home .step {
-    margin-right: 2rem;
-  }
+  margin-left: 15px;
 }
 .step_home .All_steps {
   flex-direction: column;
@@ -76,8 +71,9 @@ html h1 {
 .step_home .All_steps .step {
   display: flex;
   align-items: center;
+  position: relative;
   border-radius: 20px;
-  margin-bottom: 1rem;
+  margin: 0 10px 20px 10px;
   padding: 0.6em 1em;
   background-color: #F6F6F6;
 }
@@ -87,6 +83,8 @@ html h1 {
   border-radius: 25px;
   padding: 0.2em 0.5em;
   color: white;
+  position: absolute;
+  left: -15px;
 }
 .step_home .All_steps .step__icon {
   padding: 0 15px 0 15px;
@@ -96,4 +94,14 @@ html h1 {
 }
 .step_home .All_steps .step_descr {
   font-size: 16px;
+}
+@media screen and (min-width: 1044px) {
+  .step_home .All_steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .step_home .All_steps .step {
+    margin-right: 50px;
+  }
 }/*# sourceMappingURL=Styles.css.map */
