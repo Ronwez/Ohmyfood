@@ -1,9 +1,18 @@
 $grey:#EAEAEA;
 $light-grey-color:#F6F6F6;
 $btn-gradient-color:#FF79DA, #9356DC;
+$violet:#9356DC;
 
 html{
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    .Section_Title{
+        margin:15px 0 5px 0;
+        font-weight: bolder;
+    }
+    h1{
+        font-size: 40px;
+    }
 }
 
 
@@ -28,7 +37,6 @@ html{
         align-items:center;
     }
         #location {
-        font-family: roboto;
         background-color: $grey;
         width: 100%;
         }
@@ -41,12 +49,6 @@ html{
             flex-direction: column;
             padding-bottom: 30px;
         }
-            .exTitle{
-                font-family: roboto;
-                font-size: 40px;
-                margin:15px 0 5px 0;
-                font-weight: bolder;
-            }
             .exButton{
             border-radius: 25px;
             padding:15px;
@@ -55,4 +57,52 @@ html{
             border:none;
             font-weight: bold;
             }
+}
+
+.step_home{
+    margin: 30px 0 20px 0;
+        @media screen and (max-width: 767px) {
+            .step_home{
+                margin-right: 0px;
+            }
+            .All_steps {
+            flex-direction: column;
+            align-items: center;
+            }
+    
+            .step {
+            margin-bottom: 1rem;
+            width: 80%;
+            }
+         }
+    .All_steps{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .step{
+            display: flex;
+	        align-items: center;
+	        border-radius: 20px;
+	        margin-right: 2rem;
+	        padding: 0.6em 1em;
+	        font-weight: 211;
+            background-color: $light-grey-color;
+        }
+            .step_num{
+                font-size: 1.2rem;
+                background-color: $violet;
+                border-radius: 25px;
+                padding: 0.2em 0.5em;
+                color:white;
+            }
+            .step__icon{
+                padding: 0 15px 0 15px;
+            }
+                .fa-store{
+                    color: $violet;
+                }
+            .step_descr{
+                font-size: 16px;
+            }
+    }
 }

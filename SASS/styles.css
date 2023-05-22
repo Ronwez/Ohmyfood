@@ -1,5 +1,13 @@
 html {
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
+html .Section_Title {
+  margin: 15px 0 5px 0;
+  font-weight: bolder;
+}
+html h1 {
+  font-size: 40px;
 }
 
 .navbar {
@@ -23,7 +31,6 @@ html {
   align-items: center;
 }
 .top_home #location {
-  font-family: roboto;
   background-color: #EAEAEA;
   width: 100%;
 }
@@ -36,12 +43,6 @@ html {
   flex-direction: column;
   padding-bottom: 30px;
 }
-.top_home .exTitle {
-  font-family: roboto;
-  font-size: 40px;
-  margin: 15px 0 5px 0;
-  font-weight: bolder;
-}
 .top_home .exButton {
   border-radius: 25px;
   padding: 15px;
@@ -49,4 +50,51 @@ html {
   color: white;
   border: none;
   font-weight: bold;
+}
+
+.step_home {
+  margin: 30px 0 20px 0;
+}
+@media screen and (max-width: 767px) {
+  .step_home .step_home {
+    margin-right: 0px;
+  }
+  .step_home .All_steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  .step_home .step {
+    margin-bottom: 1rem;
+    width: 80%;
+  }
+}
+.step_home .All_steps {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.step_home .All_steps .step {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  margin-right: 2rem;
+  padding: 0.6em 1em;
+  font-weight: 211;
+  background-color: #F6F6F6;
+}
+.step_home .All_steps .step_num {
+  font-size: 1.2rem;
+  background-color: #9356DC;
+  border-radius: 25px;
+  padding: 0.2em 0.5em;
+  color: white;
+}
+.step_home .All_steps .step__icon {
+  padding: 0 15px 0 15px;
+}
+.step_home .All_steps .fa-store {
+  color: #9356DC;
+}
+.step_home .All_steps .step_descr {
+  font-size: 16px;
 }/*# sourceMappingURL=Styles.css.map */
