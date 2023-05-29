@@ -66,7 +66,7 @@ h1 {
 .step_home .All_steps {
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
 }
 .step_home .All_steps .step {
   display: flex;
@@ -104,4 +104,74 @@ h1 {
   .step_home .All_steps .step {
     margin-right: 50px;
   }
+}
+
+.resto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #F6F6F6;
+}
+
+#restTitle {
+  margin: 10px 0 20px 15px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  margin: 0 5px 10px 5px;
+  box-sizing: border-box;
+}
+
+.card-title {
+  margin: 5px 0 5px 0;
+  font-size: 20px;
+}
+
+.card-subtitle {
+  margin: 3px 0 8px;
+}
+
+.card img {
+  width: 100%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.clickcard {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (min-width: 1044px) {
+  .resto .restdivi {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+  .resto .card {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+}
+/**********FOOTER**********/
+.footbord {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+}
+.footbord a {
+  text-decoration: none;
+  color: white;
+}
+.footbord #footerlogo {
+  fill: white;
+  width: 150px;
 }/*# sourceMappingURL=Styles.css.map */
