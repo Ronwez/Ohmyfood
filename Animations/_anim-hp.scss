@@ -1,0 +1,13 @@
+.fa-heart {
+    padding-right: 15px;
+    font-size: 1.3em;
+    transition: transform 0.3s;
+  }
+  
+  .fa-heart:hover,
+  .fa-heart:focus {
+    transform: scale(1.2);
+  }
+  .fa-heart.clicked {
+    color: red;
+  }
