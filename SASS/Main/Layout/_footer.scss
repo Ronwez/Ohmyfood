@@ -12,24 +12,27 @@ footer{
         flex-direction:row;
         align-items: center;
         justify-content: end;
+        padding-top:50px;
     }
     a{ 
         text-decoration: none;
         color:white;
         padding-left:20px;
+            &:hover{
+                color:$violet;
+            }
     }
     #footerlogo{
         padding: 20px 0 20px 20px;
         @media screen and (min-width: 1044px){
             order:2;
-            padding: 40px 50px 0 150px;
-            max-width: 200px;
+            margin: 0 15px 0 100px;
         }
     }
 }
-
-
-
+footer img{
+    height:20px;
+}
 .last-link{
     display: flex;
     flex-direction: column;
@@ -43,6 +46,7 @@ footer{
 .last-link {
     display:flex;   
     flex-direction: row;
+    margin-left:40px;
     }
 .icone-link{
     display:flex;   

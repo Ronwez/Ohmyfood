@@ -1,5 +1,5 @@
 * {
-  margin:0;
+  margin: 0;
 }
 
 html {
@@ -20,7 +20,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  margin: 20px;
 }
 .navbar #logo {
   width: 200px;
@@ -30,6 +30,7 @@ h1 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 30px;
 }
 .top_home .homehead {
   display: flex;
@@ -39,25 +40,29 @@ h1 {
 .top_home #location {
   background-color: #EAEAEA;
   width: 100%;
-  padding:10px 0 10px 0;
+  padding: 10px 0 10px 0;
 }
 .top_home .fa-location-dot {
   padding-right: 10px;
 }
 .top_home #explorer {
   background-color: #F6F6F6;
-  padding: 0 25px 30px 25px;
+  padding: 15px 25px 30px 25px;
   display: flex;
   flex-direction: column;
-  gap:15px;
+  gap: 35px;
 }
 .top_home .exButton {
   border-radius: 25px;
-  padding: 15px;
+  padding: 15px 25px 15px 25px;
   background: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: white;
   border: none;
   font-weight: bold;
+  cursor: pointer;
+}
+.top_home .exButton:hover {
+  background: linear-gradient(to bottom, #FFA7E6, #9356DC);
 }
 
 .step_home {
@@ -77,6 +82,7 @@ h1 {
   margin: 0 10px 20px 10px;
   padding: 1.5em 1em;
   background-color: #F6F6F6;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 .step_home .All_steps .step_num {
   font-size: 1.2rem;
@@ -95,6 +101,8 @@ h1 {
 }
 .step_home .All_steps .step_descr {
   font-size: 16px;
+  width: 211px;
+  font-weight: bold;
 }
 @media screen and (min-width: 1044px) {
   .step_home .All_steps {
@@ -118,11 +126,17 @@ h1 {
 #restTitle {
   margin: 10px 0 20px 15px;
 }
+@media screen and (min-width: 1044px) {
+  #restTitle {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
 
 .card {
   background-color: white;
   border-radius: 20px;
-  padding: 5px;
+  padding-bottom: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   margin: 0 5px 10px 5px;
   box-sizing: border-box;
@@ -135,11 +149,13 @@ h1 {
 }
 
 .card-title {
+  padding-left: 15px;
   margin: 5px 0 5px 0;
   font-size: 20px;
 }
 
 .card-subtitle {
+  padding-left: 15px;
   margin: 3px 0 8px;
   display: flex;
   justify-content: space-between;
@@ -148,20 +164,6 @@ h1 {
 .fa-heart {
   padding-right: 15px;
   font-size: 1.3em;
-}
-
-.fa-heart {
-  padding-right: 15px;
-  font-size: 1.3em;
-  transition: transform 0.3s, color 0.3s;
-}
-
-.fa-heart:hover {
-  transform: scale(1.2);
-}
-
-.fa-heart.clicked {
-  color: red;
 }
 
 .card img {
@@ -176,7 +178,6 @@ h1 {
 .clickcard {
   text-decoration: none;
   color: black;
-  
 }
 
 @media screen and (min-width: 1044px) {
@@ -188,9 +189,28 @@ h1 {
   }
   .resto .card {
     width: 40%;
-    margin-bottom: 20px;
+    max-width: 490px;
+    margin-bottom: 40px;
+  }
+  .resto .card img {
+    height: 180px;
   }
 }
+.fa-heart {
+  padding-right: 15px;
+  font-size: 1.3em;
+  transition: transform 0.3s;
+}
+
+.fa-heart:hover,
+.fa-heart:focus {
+  transform: scale(1.2);
+}
+
+.fa-heart.clicked {
+  color: red;
+}
+
 footer {
   width: 100%;
 }
@@ -207,13 +227,16 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: end;
+    padding-top: 50px;
   }
 }
 .footbord a {
   text-decoration: none;
   color: white;
-  padding-bottom: 10px;
   padding-left: 20px;
+}
+.footbord a:hover {
+  color: #9356DC;
 }
 .footbord #footerlogo {
   padding: 20px 0 20px 20px;
@@ -221,9 +244,12 @@ footer {
 @media screen and (min-width: 1044px) {
   .footbord #footerlogo {
     order: 2;
-    padding: 40px 50px 0 150px;
-    max-width: 200px;
+    margin: 0 15px 0 100px;
   }
+}
+
+footer img {
+  height: 20px;
 }
 
 .last-link {
@@ -240,14 +266,13 @@ footer {
   .last-link {
     display: flex;
     flex-direction: row;
-    padding: 60px 0 15px 0;
+    margin-left: 40px;
   }
   .icone-link {
     display: flex;
     flex-direction: row;
-    padding: 60px 30px 15px 0;
   }
 }
 .fa-utensils {
   padding-right: 5px;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=Main.css.map */
