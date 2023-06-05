@@ -16,7 +16,6 @@ footer{
     a{ 
         text-decoration: none;
         color:white;
-        padding-bottom: 10px;
         padding-left:20px;
     }
     #footerlogo{
@@ -41,13 +40,11 @@ footer{
 @media screen and (min-width: 1044px){
 .last-link {
     display:flex;   
-    flex-direction: row; 
-    padding: 60px 0 15px 0;
+    flex-direction: row;
     }
 .icone-link{
     display:flex;   
     flex-direction: row;
-    padding: 60px 30px 15px 0;
 }
 }
 

@@ -11,6 +11,7 @@
         #location {
         background-color: $grey;
         width: 100%;
+        padding: 10px 0 10px 0;
         }
             .fa-location-dot{
             padding-right: 10px;
@@ -20,6 +21,7 @@
             padding:0 25px 30px 25px;
             display: flex;
             flex-direction: column;
+            gap:15px;
         }
             .exButton{
             border-radius: 25px;
@@ -44,7 +46,7 @@
             position: relative;
             border-radius: 20px;
             margin: 0 10px 20px 10px;
-            padding: 0.6em 1em;
+            padding: 1.5em 1em;
             background-color: $light-grey-color;
         }
             .step_num{
