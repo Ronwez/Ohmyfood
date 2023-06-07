@@ -12,10 +12,6 @@ html {
   font-weight: bolder;
 }
 
-h1 {
-  font-size: 40px;
-}
-
 .navbar {
   display: flex;
   align-items: center;
@@ -50,7 +46,7 @@ h1 {
   padding: 15px 25px 30px 25px;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 20px;
 }
 .top_home .exButton {
   border-radius: 25px;
@@ -59,6 +55,7 @@ h1 {
   color: white;
   border: none;
   font-weight: bold;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .top_home .exButton:hover {
@@ -96,7 +93,7 @@ h1 {
 .step_home .All_steps .step__icon {
   padding: 0 15px 0 15px;
 }
-.step_home .All_steps .fa-store {
+.step_home .All_steps .step:hover .step__icon {
   color: #9356DC;
 }
 .step_home .All_steps .step_descr {
@@ -112,6 +109,14 @@ h1 {
   }
   .step_home .All_steps .step {
     margin-right: 50px;
+  }
+}
+
+@media screen and (min-width: 1044px) {
+  #steptitle {
+    display: flex;
+    justify-content: center;
+    padding-right: 750px;
   }
 }
 
@@ -138,7 +143,7 @@ h1 {
   border-radius: 20px;
   padding-bottom: 5px;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  margin: 0 5px 10px 5px;
+  margin: 0 15px 10px 15px;
   box-sizing: border-box;
   transition: transform 0.3s;
 }
@@ -211,40 +216,48 @@ h1 {
   color: red;
 }
 
-footer {
-  width: 100%;
-}
-
 .footbord {
   background-color: #353535;
   display: flex;
   flex-direction: column;
   width: 100%;
+  list-style-type: none;
+  padding-top: 30px;
+  padding-left: 20px;
 }
 @media screen and (min-width: 1044px) {
   .footbord {
+    padding-top: 50px;
+    padding-left: 0;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: end;
-    padding-top: 50px;
   }
 }
 .footbord a {
+  display: flex;
   text-decoration: none;
   color: white;
-  padding-left: 20px;
+  margin-bottom: 10px;
 }
 .footbord a:hover {
   color: #9356DC;
 }
-.footbord #footerlogo {
-  padding: 20px 0 20px 20px;
+@media screen and (min-width: 1044px) {
+  .footbord a {
+    margin-left: 10px;
+  }
+}
+
+#footerlogo {
+  padding-bottom: 15px;
 }
 @media screen and (min-width: 1044px) {
-  .footbord #footerlogo {
-    order: 2;
-    margin: 0 15px 0 100px;
+  #footerlogo {
+    margin: 0 15px 0 10px;
+    padding-bottom: 0;
+    order: 1;
   }
 }
 
@@ -252,12 +265,7 @@ footer img {
   height: 20px;
 }
 
-.last-link {
-  display: flex;
-  flex-direction: column;
-}
-
-.icone-link {
+.last-link .icone-link {
   display: flex;
   flex-direction: column;
 }
@@ -271,6 +279,7 @@ footer img {
   .icone-link {
     display: flex;
     flex-direction: row;
+    margin-left: 10px;
   }
 }
 .fa-utensils {
