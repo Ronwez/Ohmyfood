@@ -2,7 +2,6 @@
     background-color: #353535;
     display: flex;
     flex-direction: column;
-    width:100%;
     list-style-type: none;
     padding-top:30px;
     padding-left: 20px;
@@ -31,7 +30,7 @@
 #footerlogo{
        padding-bottom: 15px;
         @media screen and (min-width: 1044px){
-            margin: 0 15px 0 10px;
+            margin: 0 15px 0 80px;
             padding-bottom: 0;
             order:1;
         }
@@ -47,16 +46,11 @@ footer img{
 
 
 @media screen and (min-width: 1044px){
-.last-link {
+#last-link {
     display:flex;   
     flex-direction: row;
     margin-left: 40px;
     }
-.icone-link{
-    display:flex;   
-    flex-direction: row;
-    margin-left: 10px;
-}
 }
 
 .fa-utensils{

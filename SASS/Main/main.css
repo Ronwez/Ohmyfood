@@ -14,7 +14,6 @@ html {
 
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: center;
   margin: 20px;
 }
@@ -33,10 +32,16 @@ html {
   justify-content: center;
   align-items: center;
 }
-.top_home #location {
+.top_home #localisation {
   background-color: #EAEAEA;
   width: 100%;
   padding: 10px 0 10px 0;
+  box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 1044px) {
+  .top_home #localisation {
+    box-shadow: none;
+  }
 }
 .top_home .fa-location-dot {
   padding-right: 10px;
@@ -60,6 +65,7 @@ html {
 }
 .top_home .exButton:hover {
   background: linear-gradient(to bottom, #FFA7E6, #9356DC);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .step_home {
@@ -92,6 +98,7 @@ html {
 }
 .step_home .All_steps .step__icon {
   padding: 0 15px 0 15px;
+  color: grey;
 }
 .step_home .All_steps .step:hover .step__icon {
   color: #9356DC;
@@ -112,11 +119,15 @@ html {
   }
 }
 
+#steptitle {
+  padding-bottom: 15px;
+}
 @media screen and (min-width: 1044px) {
   #steptitle {
     display: flex;
     justify-content: center;
-    padding-right: 750px;
+    position: relative;
+    right: 440px;
   }
 }
 
@@ -129,12 +140,14 @@ html {
 }
 
 #restTitle {
-  margin: 10px 0 20px 15px;
+  padding-bottom: 30px;
 }
 @media screen and (min-width: 1044px) {
   #restTitle {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    position: relative;
+    right: 470px;
   }
 }
 
@@ -146,6 +159,31 @@ html {
   margin: 0 15px 10px 15px;
   box-sizing: border-box;
   transition: transform 0.3s;
+}
+.card .clickcard {
+  text-decoration: none;
+  color: black;
+}
+
+.new {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #99E2D0;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color: green;
+  position: absolute;
+  right: 15px;
+  top: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 136px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .card:hover,
@@ -166,25 +204,6 @@ html {
   justify-content: space-between;
 }
 
-.fa-heart {
-  padding-right: 15px;
-  font-size: 1.3em;
-}
-
-.card img {
-  width: 100%;
-  height: 136px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.clickcard {
-  text-decoration: none;
-  color: black;
-}
-
 @media screen and (min-width: 1044px) {
   .resto .restdivi {
     display: flex;
@@ -201,26 +220,37 @@ html {
     height: 180px;
   }
 }
-.fa-heart {
-  padding-right: 15px;
+.double-heart {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.double-heart .fa-heart {
+  padding: 0 25px 0 1px;
   font-size: 1.3em;
-  transition: transform 0.3s;
+  position: absolute;
+  bottom: 25px;
 }
 
-.fa-heart:hover,
-.fa-heart:focus {
-  transform: scale(1.2);
+.fill-heart {
+  opacity: 0;
+  right: 0.2px;
+  transition: all 400ms;
+}
+.fill-heart:active {
+  opacity: 1;
+  color: transparent;
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
 }
 
-.fa-heart.clicked {
-  color: red;
+.empty-heart:active {
+  opacity: 0;
 }
 
 .footbord {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  width: 100%;
   list-style-type: none;
   padding-top: 30px;
   padding-left: 20px;
@@ -255,7 +285,7 @@ html {
 }
 @media screen and (min-width: 1044px) {
   #footerlogo {
-    margin: 0 15px 0 10px;
+    margin: 0 15px 0 80px;
     padding-bottom: 0;
     order: 1;
   }
@@ -271,15 +301,10 @@ footer img {
 }
 
 @media screen and (min-width: 1044px) {
-  .last-link {
+  #last-link {
     display: flex;
     flex-direction: row;
     margin-left: 40px;
-  }
-  .icone-link {
-    display: flex;
-    flex-direction: row;
-    margin-left: 10px;
   }
 }
 .fa-utensils {

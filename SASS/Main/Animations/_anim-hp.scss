@@ -1,13 +1,26 @@
-.fa-heart {
-    padding-right: 15px;
-    font-size: 1.3em;
-    transition: transform 0.3s;
-  }
-  
-  .fa-heart:hover,
-  .fa-heart:focus {
-    transform: scale(1.2);
-  }
-  .fa-heart.clicked {
-    color: red;
-  }
+.double-heart{
+    display: flex;
+    flex-direction: row-reverse;
+        .fa-heart{
+        padding: 0 25px 0 1px;
+        font-size: 1.3em;
+        position: absolute;
+        bottom:25px;
+        }
+}
+
+.fill-heart{
+    opacity: 0;
+    right:0.2px;
+    transition: all 400ms;
+    &:active{
+        opacity: 1;
+        color:transparent;
+        background-image: linear-gradient($heart-gradient-color);
+        -webkit-background-clip: text;
+    }
+}
+
+.empty-heart:active{
+    opacity:0;
+}
