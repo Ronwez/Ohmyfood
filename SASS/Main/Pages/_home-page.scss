@@ -1,5 +1,11 @@
 //////*Haut du main*//////
 
+h1{
+    @media screen and (min-width: 1044px){
+    font-size: 40px;
+    }
+}
+
 .top_home{
     display: flex;
     flex-direction: column;
@@ -21,6 +27,14 @@
         }
             .fa-location-dot{
             padding-right: 10px;
+            }
+            #input-position{
+                border:none;
+                background-color: $grey;
+                font-size:1em;
+                &::placeholder{
+                    color:black;
+                }
             }
         #explorer{
             background-color: $light-grey-color;
@@ -125,8 +139,9 @@
 
 #restTitle{
     padding-bottom: 30px;
+    margin-left:15px;
     @media screen and (min-width: 1044px){
-                display: flex;
+        display: flex;
         justify-content: center;
         position: relative;
         right:470px;

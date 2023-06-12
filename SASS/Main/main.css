@@ -9,7 +9,7 @@ html {
 
 .Section_Title {
   margin: 15px 0 5px 0;
-  font-weight: bolder;
+  font-weight: 800;
 }
 
 .navbar {
@@ -19,6 +19,12 @@ html {
 }
 .navbar #logo {
   width: 200px;
+}
+
+@media screen and (min-width: 1044px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 .top_home {
@@ -45,6 +51,17 @@ html {
 }
 .top_home .fa-location-dot {
   padding-right: 10px;
+}
+.top_home #input-position {
+  border: none;
+  background-color: #EAEAEA;
+  font-size: 1em;
+}
+.top_home #input-position::-moz-placeholder {
+  color: black;
+}
+.top_home #input-position::placeholder {
+  color: black;
 }
 .top_home #explorer {
   background-color: #F6F6F6;
@@ -141,6 +158,7 @@ html {
 
 #restTitle {
   padding-bottom: 30px;
+  margin-left: 15px;
 }
 @media screen and (min-width: 1044px) {
   #restTitle {
