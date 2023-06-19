@@ -1,0 +1,107 @@
+.top_page img{
+    width:100%;
+    object-fit: cover;
+    height:16em;
+    @media screen and (min-width: 1044px){
+    height:32em;
+    }
+}
+
+h4{
+    padding-bottom: 3px;
+}
+
+.euro{
+    font-weight: bold;
+}
+
+.menu{
+    display:flex;
+    flex-direction: column;
+    background-color: $light-grey-color;
+    border-radius: 30px 30px 0 0;
+    padding-bottom: 5px;
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.1));
+    margin-top: -60px;
+    box-sizing: border-box;
+        h1{
+            padding:50px 0 0 15px;
+            font-family: 'Shrikhand', cursive, sans-serif;
+            font-weight: 700;
+        }
+        .fa-heart{
+            top:57px;
+            right:25px;
+        }
+                
+}
+
+.menutitle{
+    margin-top:50px;
+    padding-left:15px;
+    &::after{
+    content: "";
+    width: 50px;
+    height: 3px;
+    display: block;
+    position: absolute;
+    background-color: $mint;
+    }
+}
+
+.menucard{
+background-color: white;
+border-radius: 15px;
+padding:10px 15px 10px 15px;
+filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+margin: 15px 15px 0px 15px;
+box-sizing: border-box;
+    p{
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+}
+
+.command-btn{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 30px 0;
+    .exButton{
+        padding:15px 50px 15px 50px;
+        }
+}
+
+.fa-circle-check {
+    color: white;
+    font-size: 30px;
+}
+
+.menu-card_validate {
+    box-sizing: border-box;
+    position: absolute;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    right: -3%;
+    bottom: 0;
+    width: 15%;
+    height: 100%;
+    background-color: $mint;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menucard:hover .menu-card_validate {
+    opacity: 1;
+    transform: translateX(-20%);
+  }
+  .menucard:hover p span.euro {
+    transform: translateX(-200%);
+    transition: transform 0.5s;
+  }
+
+

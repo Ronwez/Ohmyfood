@@ -1,0 +1,27 @@
+.fade-in {
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.entrées{
+  animation-delay: 0s;
+}
+
+.plats{
+  animation-delay: 1s;
+}
+
+.desserts{
+  animation-delay:2s;
+}

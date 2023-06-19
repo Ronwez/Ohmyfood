@@ -1,6 +1,9 @@
 @import "./Utils/variables";
 @import "./BASE/base";
+@import "./Animations/loader";
 @import "./Layout/header";
 @import "./Pages/home-page";
-@import "./Animations/anim-hp";
+@import "./Animations/anim-heart";
+@import "./restaurants/rest-page";
+@import "./Animations/_anim-rest";
 @import "./Layout/footer";
