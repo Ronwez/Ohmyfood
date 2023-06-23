@@ -25,3 +25,46 @@
 .desserts{
   animation-delay:2s;
 }
+
+
+
+.fa-circle-check {
+  color: white;
+  font-size: 30px;
+}
+
+.menu-card_validate {
+  opacity:0;
+  background-color: $mint;
+  width: 0%;
+  height:65px;
+  display:flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transform: translateX(100px);
+  cursor: pointer;
+  transition: all 700ms;
+  box-sizing: border-box;
+}
+      
+  
+.menucard:hover > .menu-card_validate{
+  opacity:1;
+  transform: translateX(0%);
+  background-color: #99e2d0;
+  cursor: pointer;
+  animation: extend 400ms linear forwards;
+}
+
+@keyframes extend{
+0%{ width:1%; }
+
+100%{ width:13%; }
+}
+
+.menucard:hover .menu-card_validate i{
+  transform: rotate(720deg);
+  transition: transform 0.7s;
+}
