@@ -154,6 +154,12 @@ h1{
     margin: 0 15px 10px 15px;
     box-sizing: border-box;
     transition: transform 0.3s;
+    .fa-heart{
+        position: absolute;
+        bottom: 25px;
+        right: 18px;
+        font-size: 22px;
+    }
     .clickcard{
         text-decoration:none;
         color:black;

@@ -59,9 +59,17 @@
 }
 
 @keyframes extend{
+  0%{ width:1%; }
+
+  100%{ width:15%; }
+}
+
+@media screen and (min-width: 1044px){
+@keyframes extend{
 0%{ width:1%; }
 
-100%{ width:13%; }
+100%{ width:8%; }
+}
 }
 
 .menucard:hover .menu-card_validate i{

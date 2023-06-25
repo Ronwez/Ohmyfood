@@ -260,6 +260,12 @@ html {
   box-sizing: border-box;
   transition: transform 0.3s;
 }
+.card .fa-heart {
+  position: absolute;
+  bottom: 25px;
+  right: 18px;
+  font-size: 22px;
+}
 .card .clickcard {
   text-decoration: none;
   color: black;
@@ -320,31 +326,30 @@ html {
     height: 180px;
   }
 }
-.double-heart {
-  display: flex;
-  flex-direction: row-reverse;
-}
-.double-heart .fa-heart {
-  margin: 0 25px 0 1px;
-  font-size: 1.3em;
-  position: absolute;
-  bottom: 25px;
-}
-
-.fill-heart {
-  opacity: 0;
-  right: 0.2px;
-  transition: all 400ms;
-}
-.fill-heart:hover {
-  opacity: 1;
+.fa-heart {
+  border: none;
   color: transparent;
-  background-image: linear-gradient(#9356DC, #FF79DA);
-  -webkit-background-clip: text;
+  background-color: transparent;
+  -webkit-text-stroke: 1px black;
+  cursor: pointer;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  position: relative;
+  font-size: 20px;
+}
+@media screen and (min-width: 1044px) {
+  .fa-heart {
+    font-size: 25px;
+  }
 }
 
-.empty-heart:hover {
-  opacity: 0;
+.fa-heart:hover {
+  background-image: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 0;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 .top_page img {
@@ -384,7 +389,6 @@ h4 {
 .menu h1 {
   padding: 50px 0 0 15px;
   font-family: "Shrikhand", cursive, sans-serif;
-  font-weight: 700;
 }
 @media screen and (min-width: 1044px) {
   .menu h1 {
@@ -393,14 +397,23 @@ h4 {
     margin-left: -3em;
   }
 }
-.menu .double-heart {
-  position: relative;
-  top: 16px;
+
+.top-page-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top-page-menu .fa-heart {
+  margin-right: 40px;
+  top: 25px;
 }
 @media screen and (min-width: 1044px) {
-  .menu .double-heart {
-    right: -50px;
-    top: 5px;
+  .top-page-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 9em;
+    gap: 40px;
   }
 }
 
@@ -532,7 +545,17 @@ h4 {
     width: 1%;
   }
   100% {
-    width: 13%;
+    width: 15%;
+  }
+}
+@media screen and (min-width: 1044px) {
+  @keyframes extend {
+    0% {
+      width: 1%;
+    }
+    100% {
+      width: 8%;
+    }
   }
 }
 .menucard:hover .menu-card_validate i {
