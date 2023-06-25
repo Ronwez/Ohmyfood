@@ -14,9 +14,9 @@
 }
 
 .fa-heart:hover {
-    background-image: -webkit-gradient(linear, top, bottom, from(#9356DC), to(#FF79DA));
-    background-image: -o-linear-gradient(#9356DC, #FF79DA);
-    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-image: -webkit-gradient(linear, top, bottom, from($violet), to($mauve));
+    background-image: -o-linear-gradient($violet, $mauve);
+    background-image: linear-gradient($violet, $mauve);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 0;
