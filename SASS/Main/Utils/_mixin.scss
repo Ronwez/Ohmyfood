@@ -1,0 +1,9 @@
+@mixin hidden-txt{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin shadow{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}

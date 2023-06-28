@@ -8,18 +8,34 @@
     -webkit-transform: scale(1);
     position: relative;
     font-size: 20px;
+    transition: all 500ms ease;
     @media screen and (min-width: 1044px){
         font-size:25px;
     }
 }
 
 .fa-heart:hover {
-    background-image: -webkit-gradient(linear, top, bottom, from($violet), to($mauve));
-    background-image: -o-linear-gradient($violet, $mauve);
-    background-image: linear-gradient($violet, $mauve);
+    background-image: -webkit-gradient($heart-gradient-color);
+    background-image: -o-linear-gradient($heart-gradient-color);
+    background-image: linear-gradient($heart-gradient-color);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 0;
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
+    animation: remplir 600ms forwards;
+}
+
+@keyframes remplir{
+    0%{
+        opacity:0.2;
+    }
+
+    50%{
+        opacity:0.5;
+    }
+
+    100%{
+        opacity:1;
+    }
 }

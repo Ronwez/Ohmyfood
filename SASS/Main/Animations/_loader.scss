@@ -6,6 +6,7 @@
     height: 100%;
     background-color: #353535;
     z-index: 9999;
+    -webkit-animation: fadeout 3s linear forwards;
     animation: fadeout 3s linear forwards; /* Animation de 3 secondes */
 }
 
