@@ -148,6 +148,7 @@ h1{
 }
 
 .card{
+    position: relative;
     background-color: white;
     border-radius: 20px;
     padding-bottom: 5px;
@@ -155,6 +156,17 @@ h1{
     box-sizing: border-box;
     transition: transform 0.3s;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    .new{
+        font-size: 14px;
+        font-weight: bold;
+        background-color:$mint;
+        border-radius:4px;
+        padding: 0.5em 1em;
+        color:green;
+        position:absolute;
+        right:15px;
+        top:20px;
+    }
     .fa-heart{
         position: absolute;
         bottom: 25px;
@@ -165,18 +177,6 @@ h1{
         text-decoration:none;
         color:black;
         }
-}
-
-.new{
-    font-size: 14px;
-    font-weight: bold;
-    background-color:$mint;
-    border-radius:4px;
-    padding: 0.5em 1em;
-    color:green;
-    position:absolute;
-    right:15px;
-    top:20px;
 }
 
 .card img{

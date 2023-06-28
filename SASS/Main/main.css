@@ -253,6 +253,7 @@ html {
 }
 
 .card {
+  position: relative;
   background-color: white;
   border-radius: 20px;
   padding-bottom: 5px;
@@ -260,6 +261,17 @@ html {
   box-sizing: border-box;
   transition: transform 0.3s;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.card .new {
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #99E2D0;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  color: green;
+  position: absolute;
+  right: 15px;
+  top: 20px;
 }
 .card .fa-heart {
   position: absolute;
@@ -270,18 +282,6 @@ html {
 .card .clickcard {
   text-decoration: none;
   color: black;
-}
-
-.new {
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #99E2D0;
-  border-radius: 4px;
-  padding: 0.5em 1em;
-  color: green;
-  position: absolute;
-  right: 15px;
-  top: 20px;
 }
 
 .card img {
@@ -387,6 +387,7 @@ h4 {
 }
 
 .menu {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: #F6F6F6;
@@ -471,8 +472,7 @@ h4 {
   padding: 10px 15px 10px 15px;
   width: 100%;
 }
-
-#menucard-txt {
+.menucard-content .menucard-txt {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
