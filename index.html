@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Ohmyfood</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&family=Raleway:wght@200&family=Roboto:wght@300&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+		<link rel="stylesheet" href="sass/main/main.css">
+	</head>
+	<body>
+		<header>
+			<div id="preloader">
+				<div id="loader"></div>
+			  </div>
+			<nav class="navbar">
+				<a href="index.html"><img id="logo" src="assets/Images_et_textes_Ohmyfood/images/logo/ohmyfood.png" alt="logo"></a>
+			</nav>
+		</header>
+		<main>
+			<section class="top_home">
+				<div class="homehead" id="localisation">
+					<i class="fa-solid fa-location-dot"></i>
+					<input type="text" id="input-position" name="position" required minlength="3" maxlength="30" size="10" placeholder="Paris, Belville">
+				</div>
+				<div id="explorer" class="homehead">
+					<h1 class="Section_Title">Réservez le menu qui vous convient</h1>
+					<p>
+						Découvrez des restaurants d'exceptions, sélectionnés par nos soins
+					</p>
+					<button type="submit" class="exButton">Explorer nos restaurants</button>
+				</div>
+			</section>
+			<section class="step_home">
+				<h2 class="Section_Title" id="steptitle">Fonctionnements</h2>
+				<div class="All_steps">
+					<div class="step">
+						<p class="step_num">
+							1
+						</p>
+						<span class="step__icon fas fa-mobile-alt fa-fw" aria-hidden="true"></span>
+						<p class="step_descr">
+							Choisissez un restaurant
+						</p>
+					</div>
+					<div class="step">
+						<p class="step_num">
+							2
+						</p>
+						<span class="step__icon fas fa-list-ul fa-fw" aria-hidden="true"></span>
+						<p class="step_descr">
+							Composez votre menu
+						</p>
+					</div>
+					<div class="step">
+						<p class="step_num">
+							3
+						</p>
+						<span class="step__icon fas fa-store fa-fw" aria-hidden="true"></span>
+						<p class="step_descr">
+							Dégustez au restaurant
+						</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="resto">
+					<h2 class="Section_Title" id="restTitle">Restaurants</h2>
+					<div class="restdivi">
+						<article class="card">
+							<a href="./La_palette_du_goût.html" class="clickcard">
+								<img src="assets/Images_et_textes_Ohmyfood/images/restaurants/La_palette_du_gout.jpg" alt="Image d'un plat du restaurant">
+								<p class="new">
+									Nouveau
+								</p>
+								<h3 class="card-title">La palette du goût</h3>
+								<p class="card-subtitle">
+									Ménilmontant
+								</p>
+							</a>
+								<button class="fas fa-heart" type="button" aria-hidden="true">
+								</button>
+						</article>
+						<article class="card">
+							<a href="./La_note_enchantée.html" class="clickcard">
+								<img src="assets/Images_et_textes_Ohmyfood/images/restaurants/La_note_enchantée.jpg" alt="Image d'un plat du restaurant">
+								<p class="new">
+									Nouveau
+								</p>
+								<h3 class="card-title">La note enchantée</h3>
+								<p class="card-subtitle">
+									Charonne
+								</p>
+							</a>
+								<button class="fas fa-heart" type="button" aria-hidden="true">
+								</button>
+						</article>
+					</div>
+					<div class="restdivi">
+						<article class="card">
+							<a href="./À_la_française.html" class="clickcard">
+								<img src="assets/Images_et_textes_Ohmyfood/images/restaurants/A_la_française.jpg" alt="Image d'un plat du restaurant">
+								<h3 class="card-title">À la française</h3>
+								<p class="card-subtitle">
+									Cité rouge
+								</p>
+							</a>
+								<button class="fas fa-heart" type="button" aria-hidden="true">
+								</button>
+						</article>
+						<article class="card">
+							<a href="./Le_délice_des_sens.html" class="clickcard">
+								<img src="assets/Images_et_textes_Ohmyfood/images/restaurants/Le_délice_des_sens.jpg" alt="Image d'un plat du restaurant">
+								<h3 class="card-title">Le délice des sens</h3>
+								<p class="card-subtitle">
+									Folie-Méricourt
+								</p>
+							</a>
+								<button class="fas fa-heart" type="button" aria-hidden="true">
+								</button>
+						</article>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<ol class="footbord">
+				<li id="footerlogo">
+					<a href="index.html"><img src="assets/Images_et_textes_Ohmyfood/images/logo/ohmyfood@2x2.svg" alt ="logo en blanc"></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a>
+				</li>
+				<li>
+					<a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</a>
+				</li>
+				<li><a id="last-link" href="#">Mentions légales</a></li>
+				<li><a href="mailto:">Contact</a></li>
+			</ol>
+		</footer>
+	</body>
+</html>

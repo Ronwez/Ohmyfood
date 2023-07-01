@@ -1,0 +1,225 @@
+//////*Haut du main*//////
+
+h1{
+    @media screen and (min-width: 1044px){
+    font-size: 40px;
+    }
+}
+
+.top_home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+    .homehead{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+        #localisation {
+        background-color: $grey;
+        width: 100%;
+        padding: 10px 0 10px 0;
+        }
+            .fa-location-dot{
+            padding-right: 10px;
+            }
+            #input-position{
+                border:none;
+                background-color: $grey;
+                font-size:1em;
+                &::placeholder{
+                    color:black;
+                }
+            }
+        #explorer{
+            background-color: $light-grey-color;
+            padding:15px 25px 30px 25px;
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+        }
+    }
+            
+.exButton{
+    border-radius: 25px;
+    padding:15px 25px 15px 25px;
+    background: linear-gradient(to bottom, $btn-gradient-color);
+    color:white;
+    border:none;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        &:hover{
+            background: linear-gradient(to bottom, #FFA7E6, #9356DC);
+            box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.5);
+         }
+    }
+
+//////*Etapes*//////
+
+.step_home{
+    margin-left:15px;
+    padding: 10px 0 50px 0;
+    .All_steps{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0 20px 0;
+        .step{
+            display: flex;
+            align-items: center;
+            position: relative;
+            border-radius: 20px;
+            margin: 0 10px 20px 10px;
+            padding: 1.5em 1em;
+            background-color: $light-grey-color;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+            .step_num{
+                font-size: 1.2rem;
+                background-color: $violet;
+                border-radius: 25px;
+                padding: 0.2em 0.5em;
+                color:white;
+                position:absolute;
+                left:-15px;
+            }
+            .step__icon{
+                padding: 0 15px 0 15px;
+                color:grey;
+            }
+
+            .step:hover{
+                .step__icon{
+                    color:$violet;
+                }
+            }
+
+            .step_descr{
+                font-size: 16px;
+                width:211px;
+                font-weight: bold;
+            }
+    }
+    @media screen and (min-width: 1044px) {
+        .All_steps {
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            .step {
+            margin-right: 50px;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+        }
+    }
+    }
+}
+
+#steptitle{
+    padding-bottom: 15px;
+    @media screen and (min-width: 1044px){
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right:440px;
+    }
+}
+
+
+/////*Restaurants*/////
+
+.resto{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+	background-color: $light-grey-color;
+    padding: 30px 0 60px 0;
+}
+
+#restTitle{
+    padding-bottom: 30px;
+    margin-left:15px;
+    @media screen and (min-width: 1044px){
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right:470px;
+    }
+
+}
+
+.card{
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 5px;
+    margin: 0 15px 10px 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+    .new{
+        font-size: 14px;
+        font-weight: bold;
+        background-color:$mint;
+        border-radius:4px;
+        padding: 0.5em 1em;
+        color:green;
+        position:absolute;
+        right:15px;
+        top:20px;
+    }
+    .fa-heart{
+        position: absolute;
+        bottom: 25px;
+        right: 18px;
+        font-size: 22px;
+    }
+    .clickcard{
+        text-decoration:none;
+        color:black;
+        }
+}
+
+.card img{
+    width: 100%;
+    height: 136px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    } 
+
+.card:hover,
+.card:focus {
+  transform: scale(1.05);
+}
+
+.card-title{
+    padding-left: 15px;
+    margin: 5px 0 5px 0;
+    font-size: 20px;
+}
+             
+.card-subtitle{
+    padding-left: 15px;
+    margin:3px 0 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 1044px){
+    .resto{
+    .restdivi{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap:80px;
+    }
+        .card{
+            width:40%;
+            max-width: 490px;
+            margin-bottom: 40px;
+        }
+            .card img{
+                height:180px;
+            }
+}
+}

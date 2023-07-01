@@ -1,0 +1,78 @@
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  -webkit-animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.entrées{
+  animation-delay: 0s;
+}
+
+.plats{
+  animation-delay: 1s;
+}
+
+.desserts{
+  animation-delay:2s;
+}
+
+
+
+.fa-circle-check {
+  color: white;
+  font-size: 30px;
+}
+
+.menu-card_validate {
+  opacity:0;
+  background-color: $mint;
+  width: 0%;
+  height:65px;
+  display:flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  transform: translateX(100px);
+  cursor: pointer;
+  transition: all 700ms;
+  box-sizing: border-box;
+}
+      
+  
+.menucard:hover > .menu-card_validate{
+  opacity:1;
+  transform: translateX(0%);
+  background-color: #99e2d0;
+  cursor: pointer;
+  animation: extend 400ms linear forwards;
+  -webkit-animation:  extend 400ms linear forwards;
+}
+
+@keyframes extend{
+  from{ width:1%; }
+
+  to{ width:15%; }
+}
+
+@media screen and (min-width: 1044px){
+@keyframes extend{
+from{ width:1%; }
+
+to{ width:8%; }
+}
+}
+
+.menucard:hover .menu-card_validate i{
+  transform: rotate(720deg);
+  transition: transform 0.7s;
+}
